@@ -1,0 +1,22 @@
+---
+- hosts: dellos10
+  connection: network_cli
+  gather_facts: no
+
+  tasks:
+  - name: "enable ports"
+    dellos10_config:
+      lines:
+        - shutdown
+      parents: ['interface ethernet{{ item }}']
+    with_items: "{{ PORTS }}"
+      
+
+
+
+
+
+
+
+
+

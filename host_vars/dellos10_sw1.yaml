@@ -1,0 +1,13 @@
+hostname: dellos10_sw1
+
+# parametes for connection type network_cli
+ansible_ssh_user: "{{ dellos10_sw1_user }}"
+ansible_ssh_pass: "{{ dellos10_sw1_password }}"
+ansible_network_os: dellos10
+
+# Parameters for ports to manage
+
+PORTS:
+  - 1/1/2
+  - 1/1/4
+
