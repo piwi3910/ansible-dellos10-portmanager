@@ -34,7 +34,9 @@ mkdir /tmp/mydeps
 ```
 
 3) download the required packages
+```
 pip3 download -r requirements.txt -d /tmp/mydeps
+```
 
 4) now zip, tar or whatever way and transfer this archive to your offline host and unpack in the same location
 
